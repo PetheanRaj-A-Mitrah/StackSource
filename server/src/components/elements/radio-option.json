@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_elements_radio_options",
+  "info": {
+    "displayName": "radio-option"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

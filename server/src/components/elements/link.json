@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_elements_links",
+  "info": {
+    "displayName": "Link"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "isExternal": {
+      "type": "boolean"
+    },
+    "MenuItems": {
+      "type": "component",
+      "component": "elements.menu-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_blocks_hero_sections",
+  "info": {
+    "displayName": "Hero Section"
+  },
+  "options": {},
+  "attributes": {
+    "preTitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "blocks"
+    },
+    "description": {
+      "type": "string"
+    },
+    "buttonLabel": {
+      "type": "string"
+    },
+    "buttonLink": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "alignment": {
+      "type": "enumeration",
+      "enum": [
+        "left ",
+        "right"
+      ]
+    }
+  },
+  "config": {}
+}

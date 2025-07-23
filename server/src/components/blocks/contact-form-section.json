@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_blocks_contact_form_sections",
+  "info": {
+    "displayName": "Contact Form Section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "submit_button_label": {
+      "type": "string"
+    },
+    "services": {
+      "type": "component",
+      "component": "elements.radio-option",
+      "repeatable": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_blocks_expertise_sections",
+  "info": {
+    "displayName": "Expertise Section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "services": {
+      "type": "component",
+      "component": "elements.service-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

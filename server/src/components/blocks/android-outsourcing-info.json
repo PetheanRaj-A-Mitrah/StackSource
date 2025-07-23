@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_blocks_android_outsourcing_infos",
+  "info": {
+    "displayName": "Outsourcing Info"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "outsourcing_content": {
+      "type": "component",
+      "component": "elements.heading-with-paragraph",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

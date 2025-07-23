@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "Home Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Home": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "blocks.technology-section",
+        "blocks.hero-section",
+        "blocks.expertise-section",
+        "blocks.best-practices-section",
+        "blocks.android-outsourcing-info"
+      ]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_elements_schedule_items",
+  "info": {
+    "displayName": "schedule-item"
+  },
+  "options": {},
+  "attributes": {
+    "preTitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

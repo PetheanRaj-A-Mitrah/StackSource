@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_elements_section_items",
+  "info": {
+    "displayName": "section-item"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "items": {
+      "type": "component",
+      "component": "elements.block-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

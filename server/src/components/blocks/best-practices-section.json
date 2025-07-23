@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_blocks_best_practices_sections",
+  "info": {
+    "displayName": "Best Practices Section"
+  },
+  "options": {},
+  "attributes": {
+    "main_title": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "text"
+    },
+    "sections": {
+      "type": "component",
+      "component": "elements.section-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

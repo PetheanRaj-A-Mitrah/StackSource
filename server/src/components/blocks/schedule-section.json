@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_blocks_schedule_sections",
+  "info": {
+    "displayName": "Schedule Section"
+  },
+  "options": {},
+  "attributes": {
+    "main_title": {
+      "type": "string",
+      "default": "Our process. Simple, seamless, streamlined."
+    },
+    "banner": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "schedule_items": {
+      "type": "component",
+      "component": "elements.schedule-item",
+      "repeatable": true
+    },
+    "cta": {
+      "type": "component",
+      "component": "elements.menu-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

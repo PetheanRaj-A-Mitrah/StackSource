@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "blocks.hero-section",
+        "blocks.expertise-section",
+        "blocks.android-outsourcing-info",
+        "blocks.best-practices-section",
+        "blocks.technology-section",
+        "blocks.schedule-section",
+        "blocks.faq-section",
+        "blocks.trusted-by-section",
+        "blocks.contact-form-section"
+      ]
+    }
+  }
+}

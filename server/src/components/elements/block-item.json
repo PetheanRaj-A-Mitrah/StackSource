@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_elements_block_items",
+  "info": {
+    "displayName": "block-item"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_elements_menu_items",
+  "info": {
+    "displayName": "menu-item"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "default": "Schedule a Call"
+    },
+    "href": {
+      "type": "string",
+      "default": "/start/basic-details"
+    },
+    "isExternal": {
+      "type": "boolean",
+      "default": false
+    },
+    "Category": {
+      "type": "enumeration",
+      "default": "Top Solutions",
+      "enum": [
+        "Top Solutions",
+        "Enterprise Focused",
+        "Careers",
+        "Recognitions",
+        "Inside Mitrahsoft"
+      ]
+    }
+  },
+  "config": {}
+}

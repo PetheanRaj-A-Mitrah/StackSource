@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_elements_technology_items",
+  "info": {
+    "displayName": "technology-item"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "All",
+        "Cloud Computing",
+        "Data Science",
+        "Databases",
+        "DevOps and QA",
+        "Java",
+        "JavaScript",
+        "PHP",
+        "Python"
+      ]
+    },
+    "link": {
+      "type": "string",
+      "default": "/technologies"
+    },
+    "isTrending": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "config": {}
+}

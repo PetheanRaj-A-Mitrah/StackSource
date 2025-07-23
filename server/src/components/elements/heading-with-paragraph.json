@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_elements_heading_with_paragraphs",
+  "info": {
+    "displayName": "Heading with Paragraph"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

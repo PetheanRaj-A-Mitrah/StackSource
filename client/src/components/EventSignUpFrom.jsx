@@ -1,7 +1,6 @@
 "use client";
 import { useActionState } from "react";
 import { BlockRenderer } from "@/components/BlockRenderer";
-import { Block } from "@/types";
 import { StrapiImage } from "./StrapiImage";
 import { eventsSubscribeAction } from "@/data/action";
 import { formatDate } from "@/utils/format-date";

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_elements_previous_works",
+  "info": {
+    "displayName": "Previous Work"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

@@ -1,4 +1,4 @@
 export function getStrapiURL() {
-  const url = process.env.STRAPI_API_URL || "https://worthy-cheese-16c170eb03.strapiapp.com/";
+  const url = process.env.STRAPI_API_URL || "http://localhost:1337";
   return url;
 }

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_elements_service_categories",
+  "info": {
+    "displayName": "Service Category"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "items": {
+      "type": "component",
+      "component": "elements.previous-work",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

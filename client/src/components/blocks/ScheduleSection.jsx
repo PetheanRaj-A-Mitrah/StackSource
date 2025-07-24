@@ -1,10 +1,10 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import { StrapiImage } from "../StrapiImage";
 
 export default function ScheduleSection(data) {
     const { main_title, banner, schedule_items, cta } = data;
+    console.log(`ScheduleSection.jsx 7 schedule_items---->`, schedule_items)
 
     return (
         <section className="flex flex-col md:flex-row items-start gap-12 py-16 px-6 md:px-20">

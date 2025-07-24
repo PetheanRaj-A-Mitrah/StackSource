@@ -14,6 +14,7 @@ import ScheduleSection from "./blocks/ScheduleSection";
 import FaqSection from "./blocks/FaqSection";
 import ContactFormSection from "./blocks/ContactFormSection";
 import TrustedBySection from "./blocks/TrustedBySection";
+import PreviousWorkSection from "./blocks/PreviousWorkSection";
 
 function blockRenderer(block, index) {
   switch (block.__component) {
@@ -49,6 +50,8 @@ function blockRenderer(block, index) {
       return <ContactFormSection {...block} key={index} />;
     case "blocks.trusted-by-section":
       return <TrustedBySection {...block} key={index} />;
+    case "blocks.previous-work-section":
+      return <PreviousWorkSection {...block} key={index} />;
     default:
       return null;
   }

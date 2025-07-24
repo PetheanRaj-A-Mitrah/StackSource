@@ -28,7 +28,8 @@
         "blocks.schedule-section",
         "blocks.faq-section",
         "blocks.trusted-by-section",
-        "blocks.contact-form-section"
+        "blocks.contact-form-section",
+        "blocks.previous-work-section"
       ]
     }
   }

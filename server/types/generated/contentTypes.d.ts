@@ -527,6 +527,7 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'blocks.faq-section',
         'blocks.trusted-by-section',
         'blocks.contact-form-section',
+        'blocks.previous-work-section',
       ]
     >;
     createdAt: Schema.Attribute.DateTime;

@@ -78,6 +78,17 @@ export interface BlocksHeroSection extends Struct.ComponentSchema {
   };
 }
 
+export interface BlocksPreviousWorkSection extends Struct.ComponentSchema {
+  collectionName: 'components_blocks_previous_work_sections';
+  info: {
+    displayName: 'Previous Work Section';
+  };
+  attributes: {
+    categories: Schema.Attribute.Component<'elements.service-category', true>;
+    mainTitle: Schema.Attribute.String;
+  };
+}
+
 export interface BlocksScheduleSection extends Struct.ComponentSchema {
   collectionName: 'components_blocks_schedule_sections';
   info: {
@@ -196,6 +207,17 @@ export interface ElementsMenuItem extends Struct.ComponentSchema {
   };
 }
 
+export interface ElementsPreviousWork extends Struct.ComponentSchema {
+  collectionName: 'components_elements_previous_works';
+  info: {
+    displayName: 'Previous Work';
+  };
+  attributes: {
+    name: Schema.Attribute.String & Schema.Attribute.Required;
+    url: Schema.Attribute.String;
+  };
+}
+
 export interface ElementsRadioOption extends Struct.ComponentSchema {
   collectionName: 'components_elements_radio_options';
   info: {
@@ -240,6 +262,18 @@ export interface ElementsServiceCard extends Struct.ComponentSchema {
   attributes: {
     description: Schema.Attribute.Text;
     icon: Schema.Attribute.Media<'images'>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface ElementsServiceCategory extends Struct.ComponentSchema {
+  collectionName: 'components_elements_service_categories';
+  info: {
+    displayName: 'Service Category';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    items: Schema.Attribute.Component<'elements.previous-work', true>;
     title: Schema.Attribute.String;
   };
 }
@@ -319,6 +353,7 @@ declare module '@strapi/strapi' {
       'blocks.expertise-section': BlocksExpertiseSection;
       'blocks.faq-section': BlocksFaqSection;
       'blocks.hero-section': BlocksHeroSection;
+      'blocks.previous-work-section': BlocksPreviousWorkSection;
       'blocks.schedule-section': BlocksScheduleSection;
       'blocks.technology-section': BlocksTechnologySection;
       'blocks.trusted-by-section': BlocksTrustedBySection;
@@ -328,10 +363,12 @@ declare module '@strapi/strapi' {
       'elements.link': ElementsLink;
       'elements.logo': ElementsLogo;
       'elements.menu-item': ElementsMenuItem;
+      'elements.previous-work': ElementsPreviousWork;
       'elements.radio-option': ElementsRadioOption;
       'elements.schedule-item': ElementsScheduleItem;
       'elements.section-item': ElementsSectionItem;
       'elements.service-card': ElementsServiceCard;
+      'elements.service-category': ElementsServiceCategory;
       'elements.social-links': ElementsSocialLinks;
       'elements.technology-item': ElementsTechnologyItem;
       'layout.footer': LayoutFooter;

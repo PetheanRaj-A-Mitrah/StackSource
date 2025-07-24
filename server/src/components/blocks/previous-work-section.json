@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_blocks_previous_work_sections",
+  "info": {
+    "displayName": "Previous Work Section"
+  },
+  "options": {},
+  "attributes": {
+    "mainTitle": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "component",
+      "component": "elements.service-category",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -121,19 +121,28 @@ const pageBySlugQuery = (slug) =>
                 faq_questions: true,
               },
             },
-            "blocks.trusted-by-section": { // Added Trusted By Section
+            "blocks.trusted-by-section": {
               populate: {
                 logos: {
                   fields: ["url", "alternativeText"],
                 },
               },
             },
-            "blocks.contact-form-section": { // Added Contact Form Section
+            "blocks.contact-form-section": {
               populate: {
                 logo: {
                   fields: ["url", "alternativeText"],
                 },
-                services: true, // Assuming `radio-option` component needs full population
+                services: true,
+              },
+            },
+            "blocks.previous-work-section": {
+              populate: {
+                categories: {
+                  populate: {
+                    items: true, // This will fetch all previous works under each category
+                  },
+                },
               },
             },
           },
@@ -143,11 +152,6 @@ const pageBySlugQuery = (slug) =>
     },
     { encodeValuesOnly: true }
   );
-
-
-
-
-
 
 export async function getPageBySlug(slug) {
   const path = "/api/pages";

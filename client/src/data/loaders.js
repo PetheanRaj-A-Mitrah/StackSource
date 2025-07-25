@@ -13,9 +13,57 @@ const homePageQuery = qs.stringify({
             image: {
               fields: ["url", "alternativeText"],
             },
-            logo: {
+          },
+        },
+        "blocks.expertise-section": {
+          populate: {
+            services: {
               populate: {
-                image: {
+                icon: {
+                  fields: ["url", "alternativeText"],
+                },
+              },
+            },
+          },
+        },
+        "blocks.android-outsourcing-info": {
+          populate: {
+            outsourcing_content: {
+              populate: true,
+            },
+          },
+        },
+        "blocks.best-practices-section": {
+          populate: {
+            sections: {
+              populate: {
+                items: {
+                  populate: true,
+                },
+              },
+            },
+          },
+        },
+        "blocks.technology-section": {
+          populate: {
+            items: {
+              fields: ["name", "category", "link", "isTrending"],
+              populate: {
+                logo: {
+                  fields: ["url", "alternativeText"],
+                },
+              },
+            },
+          },
+        },
+        "blocks.schedule-section": {
+          populate: {
+            banner: {
+              fields: ["url", "alternativeText"],
+            },
+            schedule_items: {
+              populate: {
+                icon: {
                   fields: ["url", "alternativeText"],
                 },
               },
@@ -23,12 +71,33 @@ const homePageQuery = qs.stringify({
             cta: true,
           },
         },
-        "blocks.info-block": {
+        "blocks.faq-section": {
           populate: {
-            image: {
+            faq_questions: true,
+          },
+        },
+        "blocks.trusted-by-section": {
+          populate: {
+            logos: {
               fields: ["url", "alternativeText"],
             },
-            cta: true,
+          },
+        },
+        "blocks.contact-form-section": {
+          populate: {
+            logo: {
+              fields: ["url", "alternativeText"],
+            },
+            services: true,
+          },
+        },
+        "blocks.previous-work-section": {
+          populate: {
+            categories: {
+              populate: {
+                items: true
+              },
+            },
           },
         },
       },
@@ -242,34 +311,21 @@ export async function getGlobalSettings() {
   return fetchAPI(url.href, { method: "GET" });
 }
 
-export async function getContent(
-  path,
-  featured,
-  query,
-  page
-) {
+export async function getContent() {
+  const path = "/api/technologies";
   const url = new URL(path, BASE_URL);
-
   url.search = qs.stringify({
-    sort: ["createdAt:desc"],
-    filters: {
-      $or: [
-        { title: { $containsi: query } },
-        { description: { $containsi: query } },
-      ],
-      ...(featured && { featured: { $eq: featured } }),
-    },
-    pagination: {
-      pageSize: BLOG_PAGE_SIZE,
-      page: parseInt(page || "1"),
-    },
     populate: {
-      image: {
-        fields: ["url", "alternativeText"],
+      items: {
+        fields: ["name", "category", "link", "isTrending"],
+        populate: {
+          logo: {
+            fields: ["url", "alternativeText"],
+          },
+        },
       },
     },
-  });
-
+  })
   return fetchAPI(url.href, { method: "GET" });
 }
 

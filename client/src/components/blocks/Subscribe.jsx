@@ -37,7 +37,7 @@ export function Subscribe({
           name="email"
           type="text"
           placeholder={errorMessage || successMessage || placeholder}
-          className={`flex-1 border rounded-md px-4 py-2 text-base focus:outline-none focus:ring-2 focus:ring-cyan-500 transition-colors ${errorMessage ? "border-red-500 bg-red-50 placeholder-red-400" : "border-gray-300 bg-white placeholder-gray-400"} ${successMessage ? "border-green-500 bg-green-50 placeholder-green-500" : ""}`}
+          className={`flex-1 border rounded-md px-4 py-2 text-base focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors ${errorMessage ? "border-red-500 bg-red-50 placeholder-red-400" : "border-gray-300 bg-white placeholder-gray-400"} ${successMessage ? "border-green-500 bg-green-50 placeholder-green-500" : ""}`}
         />
         <button
           type="submit"

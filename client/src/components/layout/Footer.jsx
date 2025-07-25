@@ -1,53 +1,11 @@
 "use client";
 import Link from "next/link";
 import { StrapiImage } from "../StrapiImage";
-import { useState } from "react";
-import { z } from "zod";
-import { subscribeService } from "../../data/services";
-import { ZodErrors } from "../ZodErrors";
-import { SubmitButton } from "../SubmitButton";
 import { Subscribe } from "../blocks/Subscribe";
 
 export function Footer({ data }) {
   if (!data) return null;
-
   const { logo, Menu, Policies, copy, socialLinks } = data;
-
-  const [email, setEmail] = useState("");
-  const [errors, setErrors] = useState([]);
-  const [success, setSuccess] = useState("");
-  const [pending, setPending] = useState(false);
-
-  // Use an object schema for better error handling
-  const emailSchema = z.object({
-    email: z.string().email({ message: "Please enter a valid email address." })
-  });
-
-  async function handleNewsletterSubmit(e) {
-    e.preventDefault();
-    setErrors([]);
-    setSuccess("");
-    const result = emailSchema.safeParse({ email });
-    if (!result.success) {
-      setErrors(result.error.errors.map(err => err.message));
-      return;
-    }
-    setPending(true);
-    try {
-      const res = await subscribeService(email);
-      if (res && res.data) {
-        setSuccess("Thank you for subscribing!");
-        setEmail("");
-      } else {
-        setErrors(["Subscription failed. Please try again later."]);
-      }
-    } catch (err) {
-      setErrors(["Subscription failed. Please try again later."]);
-    } finally {
-      setPending(false);
-    }
-  }
-
   return (
     <footer className="bg-theme-bg py-8 sm:py-10 lg:py-16 text-base lg:text-lg">
       <div className="container mx-auto px-4">
@@ -58,7 +16,7 @@ export function Footer({ data }) {
                 <Link href="/" className="inline-block">
                   <StrapiImage
                     src={logo.logo_img.url}
-                    alt={logo.logo_img.alternativeText || "BairesDev Logo"}
+                    alt={logo.logo_img.alternativeText || "Mitrahsoft Logo"}
                     width={120}
                     height={80}
                   />

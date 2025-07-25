@@ -1,4 +1,4 @@
-const BASE_URL = process.env.STRAPI_API_URL ?? "http://127.0.0.1:1337";
+const BASE_URL = process.env.NEXT_PUBLIC_STRAPI_API_URL ?? "https://worthy-cheese-16c170eb03.strapiapp.com/";
 
 export async function subscribeService(email) {
   const url = new URL("/api/newsletter-sign-ups", BASE_URL);

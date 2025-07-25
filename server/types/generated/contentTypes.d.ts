@@ -454,6 +454,11 @@ export interface ApiHomePageHomePage extends Struct.CollectionTypeSchema {
         'blocks.expertise-section',
         'blocks.best-practices-section',
         'blocks.android-outsourcing-info',
+        'blocks.trusted-by-section',
+        'blocks.schedule-section',
+        'blocks.previous-work-section',
+        'blocks.faq-section',
+        'blocks.contact-form-section',
       ]
     >;
     createdAt: Schema.Attribute.DateTime;

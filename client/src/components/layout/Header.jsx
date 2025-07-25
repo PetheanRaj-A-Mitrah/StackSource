@@ -20,7 +20,7 @@ export function Header({ data }) {
         <Link href="/">
           <StrapiImage
             src={headerLogo.logo_img.url}
-            alt={headerLogo.logo_img.alternativeText || "BairesDev Logo"}
+            alt={headerLogo.logo_img.alternativeText || "Mitrahsoft Logo"}
             width={120}
             height={80}
           />
@@ -67,7 +67,7 @@ export function Header({ data }) {
                         </ul>
                         <div className="border-t border-theme-border pt-5 mt-auto w-full">
                           <div className="flex items-center mb-2">
-                            <img src="https://assets.bairesdev.com//image/upload/c_limit,w_120/fl_sanitize/v1/www/core/rolls_royce_default_6583f2d285.svg" alt="Rolls-Royce" className="h-6 w-auto mr-2" />
+                            <img src="https://assets.Mitrahsoft.com//image/upload/c_limit,w_120/fl_sanitize/v1/www/core/rolls_royce_default_6583f2d285.svg" alt="Rolls-Royce" className="h-6 w-auto mr-2" />
                             <span className="text-xs font-semibold text-theme-link">Rolls-Royce<sup>®</sup></span>
                           </div>
                           <p className="text-xs text-theme-link">We built an app for real-time nuclear plant monitoring. <a href="#" className="underline text-theme-text">Read case study.</a></p>
@@ -170,7 +170,7 @@ export function Header({ data }) {
                 <Link href="/" onClick={() => setMobileOpen(false)}>
                   <StrapiImage
                     src={headerLogo.logo_img.url}
-                    alt={headerLogo.logo_img.alternativeText || "BairesDev Logo"}
+                    alt={headerLogo.logo_img.alternativeText || "Mitrahsoft Logo"}
                     className="h-8 w-auto"
                     width={120}
                     height={32}

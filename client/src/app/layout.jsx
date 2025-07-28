@@ -1,5 +1,6 @@
 import { Quicksand } from "next/font/google";
 import "./globals.css"
+import { Analytics } from "@vercel/analytics/next"
 
 import { getGlobalSettings } from "@/data/loaders";
 
@@ -29,6 +30,7 @@ export default async function RootLayout({
   const { header, footer } = await loader();
   return (
     <html lang="en">
+      <Analytics />
       <body className={`${quicksand.variable}`}>
         <Header data={header} />
         {children}

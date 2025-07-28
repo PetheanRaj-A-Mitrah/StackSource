@@ -14,7 +14,10 @@ export function HeroSection({
     return title?.map((block, index) => {
       if (block.type === "paragraph") {
         return (
-          <p key={index} className="text-4xl font-extrabold text-gray-900 mb-4">
+          <p
+            key={index}
+            className="text-4xl font-extrabold text-[var(--theme-text)] mb-4"
+          >
             {block.children?.map((child, childIndex) => (
               <span key={childIndex}>{child.text}</span>
             ))}
@@ -26,7 +29,7 @@ export function HeroSection({
   };
 
   return (
-    <section className="w-full py-16 bg-white">
+    <section className="w-full py-16 bg-[var(--theme-bg)]">
       <div
         className={`container mx-auto px-4 flex flex-col-reverse md:flex-row items-center gap-10 ${alignment.trim() === "right" ? "md:flex-row-reverse" : ""
           }`}
@@ -34,7 +37,7 @@ export function HeroSection({
         {/* Text Content */}
         <div className="md:w-1/2">
           {preTitle && (
-            <h4 className="text-sm font-semibold text-gray-500 uppercase mb-2">
+            <h4 className="text-sm font-semibold text-[var(--theme-link)] uppercase mb-2">
               {preTitle}
             </h4>
           )}
@@ -42,13 +45,15 @@ export function HeroSection({
           {renderTitle()}
 
           {description && (
-            <p className="text-lg text-gray-700 mb-6">{description}</p>
+            <p className="text-lg text-[var(--theme-text)] mb-6">
+              {description}
+            </p>
           )}
 
           {buttonLabel && buttonLink && (
             <Link
               href={buttonLink}
-              className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium px-6 py-3 rounded-md transition"
+              className="inline-block bg-[var(--theme-primary)] hover:bg-[var(--theme-primary-hover)] text-white font-medium px-6 py-3 rounded-md transition-colors duration-300"
             >
               {buttonLabel}
             </Link>

@@ -16,7 +16,7 @@ export function Footer({ data }) {
                 <Link href="/" className="inline-block">
                   <StrapiImage
                     src={logo.logo_img.url}
-                    alt={logo.logo_img.alternativeText || "Mitrahsoft Logo"}
+                    alt={logo.logo_img.alternativeText || "StackSource Logo"}
                     width={120}
                     height={80}
                   />
@@ -82,7 +82,7 @@ export function Footer({ data }) {
               </p>
               <Subscribe
                 headline="Subscribe to our newsletter"
-                content="Stay updated with the latest news and insights from Mitrahsoft."
+                content="Stay updated with the latest news and insights from StackSource."
                 placeholder="Enter your email"
                 buttonText="Subscribe"
               />

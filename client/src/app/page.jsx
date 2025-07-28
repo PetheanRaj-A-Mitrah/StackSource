@@ -2,6 +2,7 @@ import { BlockRenderer } from "@/components/BlockRenderer";
 import { getHomePage, getPageBySlug } from "@/data/loaders";
 import { notFound } from "next/navigation";
 import { StrapiImage } from "@/components/StrapiImage";
+import CallToActionSection from "@/components/blocks/CallToActionSection";
 
 async function loader() {
   const data = await getHomePage();
@@ -23,7 +24,6 @@ export default async function HomeRoute() {
   const blocks = data?.blocks || [];
   const techBlocks = techPage?.data[0]?.blocks || [];
 
-  console.log(`page.jsx 26 techBlocks---->`, techBlocks, techPage)
 
   const trendingItems =
     techBlocks
@@ -57,7 +57,7 @@ export default async function HomeRoute() {
                   {tech.link && (
                     <a
                       href={tech.link}
-                      target="_blank"
+                      target="_self"
                       rel="noopener noreferrer"
                       className="mt-3 text-sm text-blue-600 hover:underline"
                     >
@@ -70,6 +70,7 @@ export default async function HomeRoute() {
           </div>
         </section>
       )}
+      <CallToActionSection />
     </div>
   );
 }

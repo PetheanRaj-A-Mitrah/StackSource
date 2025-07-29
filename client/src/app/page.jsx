@@ -21,7 +21,7 @@ export default async function HomeRoute() {
 
   if (!techPage) notFound();
 
-  const blocks = data?.blocks || [];
+  const blocks = data[0]?.blocks || [];
   const techBlocks = techPage?.data[0]?.blocks || [];
 
   const trendingItems =

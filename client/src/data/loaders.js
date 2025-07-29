@@ -106,7 +106,7 @@ const homePageQuery = qs.stringify({
 });
 
 export async function getHomePage() {
-  const path = "/api/home-page";
+  const path = "/api/home-pages";
   const url = new URL(path, BASE_URL);
   url.search = homePageQuery;
 

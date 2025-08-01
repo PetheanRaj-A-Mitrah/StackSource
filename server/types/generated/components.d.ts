@@ -195,7 +195,7 @@ export interface ElementsMenuItem extends Struct.ComponentSchema {
         'Enterprise Focused',
         'Careers',
         'Recognitions',
-        'Inside Mitrahsoft',
+        'Inside StackSource',
       ]
     > &
       Schema.Attribute.DefaultTo<'Top Solutions'>;

@@ -30,7 +30,7 @@ export default function CallToActionSection({
 
                 {/* Visual */}
                 <div className="flex-1 relative w-full max-w-md md:max-w-none">
-                    <div className="relative w-full h-80 md:h-96 overflow-hidden rounded-[100px] clip-hourglass">
+                    <div className="relative w-full h-80 md:h-96 overflow-hidden clip-hourglass">
                         <Image
                             src={imageSrc}
                             alt={imageAlt}

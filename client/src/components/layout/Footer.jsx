@@ -17,7 +17,7 @@ export function Footer({ data }) {
                   <StrapiImage
                     src={logo.logo_img.url}
                     alt={logo.logo_img.alternativeText || "StackSource Logo"}
-                    width={120}
+                    width={150}
                     height={80}
                   />
                 </Link>

@@ -21,7 +21,7 @@ export function Header({ data }) {
           <StrapiImage
             src={headerLogo.logo_img.url}
             alt={headerLogo.logo_img.alternativeText || "StackSource Logo"}
-            width={120}
+            width={150}
             height={80}
           />
         </Link>

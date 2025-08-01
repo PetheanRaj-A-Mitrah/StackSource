@@ -11,8 +11,8 @@ export default async function HomeRoute() {
 
   if (!data || !techPage) notFound();
 
-  const blocks = data?.data[0]?.blocks || [];
-  const techBlocks = techPage?.data[0]?.blocks || [];
+  const blocks = data?.data?.[0]?.blocks || [];
+  const techBlocks = techPage?.data?.[0]?.blocks || [];
 
   const techSection = techBlocks.find(
     (block) => block.__component === "blocks.technology-section"

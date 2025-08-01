@@ -3,7 +3,6 @@ import { fetchAPI } from "@/utils/fetch-api";
 import { getStrapiURL } from "@/utils/get-strapi-url";
 
 const BASE_URL = getStrapiURL();
-const BLOG_PAGE_SIZE = 3;
 const homePageQuery = qs.stringify({
   populate: {
     blocks: {
@@ -209,7 +208,7 @@ const pageBySlugQuery = (slug) =>
               populate: {
                 categories: {
                   populate: {
-                    items: true, // This will fetch all previous works under each category
+                    items: true,
                   },
                 },
               },

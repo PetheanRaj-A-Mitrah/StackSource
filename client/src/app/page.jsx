@@ -20,6 +20,8 @@ export default async function HomeRoute() {
 
   const techItems = techSection?.items || [];
 
+  console.log(`page.jsx 23 blocks---->`, blocks, data)
+
   return (
     <div className="bg-[var(--theme-bg)] text-[var(--theme-text)]">
       <BlockRenderer blocks={blocks} />

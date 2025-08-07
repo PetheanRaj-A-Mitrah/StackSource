@@ -13,8 +13,8 @@ const quicksand = Quicksand({
 });
 
 export const metadata = {
-  title: "Strapi Next.js Landing Page",
-  description: "Strapi Next.js Landing Page is a starter template for building landing pages with Strapi and Next.js.",
+  title: "StackSource",
+  description: "StackSource is a powerful tool for building and managing your content.",
 };
 
 async function loader() {

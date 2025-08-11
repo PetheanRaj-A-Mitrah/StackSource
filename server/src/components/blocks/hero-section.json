@@ -6,13 +6,13 @@
   "options": {},
   "attributes": {
     "preTitle": {
-      "type": "string"
+      "type": "text"
     },
     "title": {
       "type": "blocks"
     },
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "buttonLabel": {
       "type": "string"

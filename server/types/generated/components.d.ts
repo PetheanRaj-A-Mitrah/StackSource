@@ -71,9 +71,9 @@ export interface BlocksHeroSection extends Struct.ComponentSchema {
     alignment: Schema.Attribute.Enumeration<['left ', 'right']>;
     buttonLabel: Schema.Attribute.String;
     buttonLink: Schema.Attribute.String;
-    description: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
     image: Schema.Attribute.Media<'images'>;
-    preTitle: Schema.Attribute.String;
+    preTitle: Schema.Attribute.Text;
     title: Schema.Attribute.Blocks;
   };
 }
